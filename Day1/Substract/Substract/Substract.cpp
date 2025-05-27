@@ -12,7 +12,7 @@ int solution(int num1, int num2) {
 
 int main() {
     
-    std::cout<<solution(2, 3);
+    std::cout<<solution(2, 3)<<std::endl;
     std::cout << solution(100, 2);
 
     return 0;
