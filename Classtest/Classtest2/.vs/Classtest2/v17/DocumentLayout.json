@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\seocom\\Documents\\GitHub\\AlgorithmCpp\\Classtest\\Classtest2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1F72513A-40B1-45AD-9B45-5E9DF92753D5}|Classtest2\\Classtest2.vcxproj|C:\\Users\\seocom\\Documents\\GitHub\\AlgorithmCpp\\Classtest\\Classtest2\\Classtest2\\Classtest2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1F72513A-40B1-45AD-9B45-5E9DF92753D5}|Classtest2\\Classtest2.vcxproj|solutionrelative:Classtest2\\Classtest2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Classtest2.cpp",
+              "DocumentMoniker": "C:\\Users\\seocom\\Documents\\GitHub\\AlgorithmCpp\\Classtest\\Classtest2\\Classtest2\\Classtest2.cpp",
+              "RelativeDocumentMoniker": "Classtest2\\Classtest2.cpp",
+              "ToolTip": "C:\\Users\\seocom\\Documents\\GitHub\\AlgorithmCpp\\Classtest\\Classtest2\\Classtest2\\Classtest2.cpp",
+              "RelativeToolTip": "Classtest2\\Classtest2.cpp",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswDEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-28T10:58:10.404Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
