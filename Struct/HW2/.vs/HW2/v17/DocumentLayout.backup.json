@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\seocom\\Documents\\GitHub\\AlgorithmCpp\\Struct\\HW2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A9EA992-8FA8-497B-B5BD-CF8FFE383D7C}|HW2\\HW2.vcxproj|C:\\Users\\seocom\\Documents\\GitHub\\AlgorithmCpp\\Struct\\HW2\\HW2\\HW2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A9EA992-8FA8-497B-B5BD-CF8FFE383D7C}|HW2\\HW2.vcxproj|solutionrelative:HW2\\HW2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HW2.cpp",
+              "DocumentMoniker": "C:\\Users\\seocom\\Documents\\GitHub\\AlgorithmCpp\\Struct\\HW2\\HW2\\HW2.cpp",
+              "RelativeDocumentMoniker": "HW2\\HW2.cpp",
+              "ToolTip": "C:\\Users\\seocom\\Documents\\GitHub\\AlgorithmCpp\\Struct\\HW2\\HW2\\HW2.cpp*",
+              "RelativeToolTip": "HW2\\HW2.cpp*",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAYwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-04T06:34:10.168Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
