@@ -1,20 +1,41 @@
-// Solution62.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+#include <string>
+#include <vector>
 #include <iostream>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+using namespace std;
+
+int solution(vector<string> babbling) {
+    int answer = 0;
+    vector<string> cvec = { "aya", "ye", "woo", "ma" };
+
+    for (string babble : babbling) {
+        string prev = "";
+        bool po = true;
+
+        while (babble.size() > 0) {
+            bool mach = false;
+            for (string s : cvec) {
+                if (babble.substr(0, s.size()) == s && prev != s) {
+                    prev = s;
+                    babble = babble.substr(s.size());
+                    mach = true;
+                    break;
+                }
+            }
+            if (!mach) {
+                po = false;
+                break;
+            }
+        }
+        if (po) answer++;
+    }
+
+    return answer;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+int main() {
+    vector<string> b1 = { "aya", "yee", "u", "maa" };
+    vector<string> b2 = { "ayaye", "uuu", "yeye", "yemawoo", "ayaayaa" };
+    cout << solution(b1) << endl;
+    cout << solution(b2) << endl;
+}
