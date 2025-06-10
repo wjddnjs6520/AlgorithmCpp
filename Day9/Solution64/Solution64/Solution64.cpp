@@ -1,20 +1,52 @@
-// Solution64.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include <string>
+#include <vector>
 
+using namespace std;
+
+int solution(int n, vector<int> lost, vector<int> reserve) {
+    int answer = 0;
+    vector<int> nvector(n, 1);
+
+    for (int i = 0; i < lost.size(); i++) {
+        nvector[lost[i] - 1] = 0;
+    }
+
+    for (int j = 0; j < reserve.size(); j++) {
+        nvector[reserve[j] - 1]++;
+    }
+
+    for (int k = 0; k < nvector.size(); k++) {
+        if (nvector[k] > 0) {
+            answer++;
+        }
+        else {
+            if ((k - 1) >= 0 && nvector[k - 1] > 1) {
+                nvector[k - 1]--;
+                nvector[k] = 1;
+                answer++;
+            }
+            else if ((k + 1) < nvector.size() && nvector[k + 1] > 1) {
+                nvector[k + 1]--;
+                nvector[k] = 1;
+                answer++;
+            }
+        }
+    }
+
+    return answer;
+}
 int main()
 {
-    std::cout << "Hello World!\n";
+    vector<int> l1 = { 2, 4 };
+    vector<int> l2 = { 2, 4 };
+    vector<int> l3 = { 3 };
+    vector<int> r1 = { 1, 3, 5 };
+    vector<int> r2 = { 3 };
+    vector<int> r3 = { 1 };
+
+    
+    cout << solution(5, l1, r1) << endl;
+    cout << solution(5, l2, r2) << endl;
+    cout << solution(3, l3, r3) << endl;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
